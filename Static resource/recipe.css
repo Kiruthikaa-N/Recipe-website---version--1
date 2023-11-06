@@ -1,0 +1,1134 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.navbar 
+{
+    background-image:linear-gradient(90deg,#053B50,#176B87,#64CCC5);
+    display: flex;
+    justify-content: flex-end;
+    width:100%;
+    height: 140px;
+    position: fixed;
+    z-index: 100;
+    
+}
+.navbar a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    text-decoration: none;
+    padding:14px 16px;
+    
+}
+.navbar a:hover 
+{
+    color: black;
+}
+#search
+{
+    margin-top: 87px;
+}
+.searchimg img
+{
+    height:25px;
+    width:25px;
+    margin-top: 88px;
+    margin-right:40px ;
+}
+.dropbtn
+{
+    background:none;
+    color:white;
+    border: none;
+    cursor: pointer;
+    padding:14px 16px;
+    margin-top: 80px;
+    font-size: 15px;
+  
+}
+.dropdown a
+{
+   margin-top: 60px;
+}
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #64CCC5 ;
+    min-width: 100px;
+    left:1420px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 10px;
+}
+.dropdown-content a 
+{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color:white;
+    padding:14px 16px;
+    margin-top: 10px;
+    background-color: #64CCC5 ;
+}
+.dropdown-content a:hover 
+{
+    background-color: #053B50;
+    color: white;
+}
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+input[type=text] 
+{
+    width: 130px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border:none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    height: 30px;
+    margin-top: 20px;
+    margin-right:10px; 
+}
+input[type=text]:focus
+{
+    border: 3px solid white ;
+}
+.img1 img
+{
+    height:400px;
+    width:500px;
+    margin-top: -75%;
+    margin-left: 60px;
+    padding-bottom: 70px;
+}
+.img3 img
+{
+    height:680px;
+    width:1519px;
+    margin-top:100px;
+}
+.head
+{
+    font-family: Brush Script MT;
+    font-size: 90px;
+    margin-top: -450px;
+    margin-left: 850px;
+    background-image:linear-gradient(90deg,#053B50,#176B87,#64CCC5);
+    text-shadow: 2px 2px 5px #64CCC5;
+    color: #053B50;
+}
+.head1
+{
+  font-family: Brush Script MT;
+  color:#053B50;
+  font-size:40px ;
+  margin-left:960px;
+  text-shadow: 2px 2px 5px #64CCC5;
+}
+.head2
+{
+  font-family: Brush Script MT;
+  color:#053B50;
+  font-size:40px ;
+  margin-left:900px;
+  text-shadow: 2px 2px 5px #64CCC5;
+}
+h5
+{
+    text-shadow: 2px 2px 5px black;
+}
+.logo
+{
+  font-size: 40px;
+  font-family: Brush Script MT;
+  margin-top: -60px;
+  margin-left: 50px;
+  text-shadow: 2px 2px 5px #7E685A;
+  color: #C2B9B0;
+}
+.container
+{
+    position:flex;
+    width:1000px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin: 250px ;
+    margin-top: 20px;
+}
+.container .card
+{
+    position:relative;
+    height: 500px;
+    background-color: #e5f3f8;
+    box-shadow: 2px 2px 5px #176B87;
+    display: flex;
+    width: 48%;
+    margin: 50px 0;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.container .card .imgBx
+{
+    position:absolute;
+    height: 100%;
+    background: rgb(44, 40, 40);
+    z-index: 1;
+    width: 100%;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    overflow:hidden;
+    transition:0.5s ease-in-out;
+}
+.container .card:hover .imgBx
+{
+    width:150px;
+    height:150px;
+    left:-75px;
+    top:calc(50% - 75px);
+    transition:0.5s ease-in-out;
+}
+.container .card .imgBx:before
+{
+    content:attr(data-text);
+    position: absolute;
+    bottom:0 ;
+    left:0;
+    width:5%;
+    height:5%;
+    text-align: center;
+    font-size: 6em;
+    color: rgb(227, 218, 218);
+    font-weight: 700;
+}
+.container .card .imgBx img
+{   max-height: 1000px;
+    max-width:490px;
+    transition:0.5s ease-in-out;
+}
+.container .card:hover .imgBx img
+{
+   max-width:200px;
+}
+.container .card .content
+{
+    position: absolute;
+    right:0;
+    width:calc(100% - 75px);
+    height:100%;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.container .card .content h3
+{
+    margin-bottom:5px;
+    font-size: 24px;
+    margin-left: 25px;
+    color:#053B50;
+    margin-top: 10px;
+}
+.container .card .content p
+{
+    margin-bottom:5px;
+    margin-left: 25px;
+    margin-top: 15px;
+    text-justify: inter-word;
+    margin-right: 10px;
+    text-align: justify;
+    font-family: Calibri;
+}  
+.container .card .content ul
+{
+   margin-bottom:5px;
+    margin-left: 40px;
+    margin-top: 15px;
+    text-justify: inter-word;
+    margin-right: 10px;
+    text-align: justify;
+    
+}
+.container .card .content ul li
+{
+  font-family:Calibri;
+}
+.mm
+{
+  margin-top: -20px;
+  
+}
+.mm h3
+{
+    font-size: 10px;
+}
+.hi2
+{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.card1 
+{
+    width: 150px;
+    height: 150px;
+    top:80px;
+    background:whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #053B50; 
+    display: flex;
+    justify-content:center;
+    position: relative; 
+    transition: all .4s;
+    margin-left:150px; 
+}
+.card1 img 
+{
+
+    width: 150px;
+    height: 150px;
+    top: 30;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212); 
+    transition: all .4s;
+    display: hidden;
+   
+    
+    
+}
+.card1:hover img 
+{ 
+    margin-top: -30px;
+    
+}
+.card1:hover 
+{
+    width: 160px;
+    
+}
+.card1::before 
+{
+    content:'  Chicken Fry  ';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 30px;
+    color:#053B50;
+    font-size: 0.8em;            
+    font-family: 'san serif';
+    font-weight: 700;
+    display: hidden;
+    
+    
+}
+.card2 
+{
+    width: 150px;
+    height: 150px;
+    top:-70px;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #053B50; 
+    display: flex;
+    justify-content:center;
+    position: relative; 
+    transition: all .4s;
+    margin-left:400px;
+}
+.card2 img 
+{
+    width: 150px;
+    height: 150px;
+    top:30;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212); 
+    transition: all .4s;
+    z-index: 10;
+}
+.card2:hover img 
+{ 
+    margin-top: -30px;
+}
+.card2:hover 
+{
+    width: 160px;
+}
+.card2::before
+{
+    content:' Chicken Curry ';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+    color:#053B50;
+    font-size: 0.8em;
+    font-family: 'san serif';
+    font-weight: 700;
+}
+.card3
+{
+    width: 150px;
+    height: 150px;
+    top:-440px;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #053B50; 
+    display: flex;
+    justify-content:center;
+    position: relative; 
+    transition: all .4s;
+    margin-left:150px;
+    margin-left: 650;
+}
+.card3 img 
+{
+    width: 150px;
+    height: 150px;
+    top:30;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212); 
+    transition: all .4s;
+    z-index: 10;
+}
+.card3:hover img
+{ 
+    margin-top: -30px;
+}
+
+.card3::after
+{
+    content:' Pongal   ';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 50px;
+    color:#053B50;
+    font-size: 0.8em;
+    font-family: 'san serif';
+    font-weight: 700;
+    
+}
+.card3:hover 
+{
+    width: 160px;
+}  
+.news
+{
+  width: 100%;
+  padding-top: 80px;
+  background-color: white;
+  margin-top:-10px;
+  padding-bottom: 80px;
+  height:auto;
+}
+.hi
+{
+  text-align: center;
+  color:#053B50;
+  text-shadow: 2px 2px 5px #176B87;
+  font-size: 40px;
+}
+.card4
+{
+    width: 150px;
+    height: 150px;
+    top:10px;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #053B50; 
+    display: flex;
+    justify-content:center;
+    position: relative; 
+    transition: all .4s;
+    margin-left:400px;
+}
+.card4 img 
+{
+    width: 150px;
+    height: 150px;
+    top:30;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212); 
+    transition: all .4s;
+    z-index: 10;
+}
+.card4:hover img 
+{ 
+    margin-top: -30px;
+}
+.card4:hover 
+{
+    width: 160px;
+}
+.card4::before
+{
+    content:' Rava Dosa';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 40px;
+    color:#053B50;
+    font-size: 0.8em;
+    font-family: 'san serif';
+    font-weight: 700;
+}
+.card6
+{
+    width: 150px;
+    height: 150px;
+    top:-290px;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #053B50; 
+    display: flex;
+    justify-content:center;
+    position: relative; 
+    transition: all .4s;
+    margin-left:650px;
+}
+.card6 img 
+{
+    width: 150px;
+    height: 150px;
+    top:30;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212); 
+    transition: all .4s;
+    z-index: 10;
+}
+.card6:hover img 
+{ 
+    margin-top: -30px;
+}
+.card6:hover 
+{
+    width: 160px;
+}
+.card6::before
+{
+    content:'Noodles';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 55px;
+    color:#053B50;
+    font-size: 0.8em;
+    font-family: 'san serif';
+    font-weight: 700;
+}
+.card5
+{
+    width: 150px;
+    height: 150px;
+    top:-370px;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #053B50; 
+    display: flex;
+    justify-content:center;
+    position: relative; 
+    transition: all .4s;
+    margin-left:650px;
+}
+.card5 img 
+{
+    width: 150px;
+    height: 150px;
+    top:30;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212); 
+    transition: all .4s;
+    z-index: 10;
+}
+.card5:hover img 
+{ 
+    margin-top: -30px;
+}
+.card5:hover 
+{
+    width: 160px;
+}
+.card5::before
+{
+    content:' Tomato Chutney ';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+    color:#053B50;
+    font-size: 0.8em;
+    font-family: 'sanserif';
+    font-weight: 700;
+}
+.card7
+{
+    width: 150px;
+    height: 150px;
+    top:-820px;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #053B50; 
+    display: flex;
+    justify-content:center;
+    position: relative; 
+    transition: all .4s;
+    margin-left:890px;
+}
+.card7 img 
+{
+    width: 150px;
+    height: 150px;
+    top:30;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212); 
+    transition: all .4s;
+    z-index: 10;
+}
+.card7:hover img 
+{ 
+    margin-top: -30px;
+}
+.card7:hover 
+{
+    width: 160px;
+}
+.card7::before
+{
+    content:' Chicken Biryani ';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 15px;
+    color:#053B50;
+    font-size: 0.8em;
+    font-family: 'san serif';
+    font-weight: 700;
+}
+.card8
+{
+    width: 150px;
+    height: 150px;
+    top:-740px;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #053B50; 
+    display: flex;
+    justify-content:center;
+    position: relative; 
+    transition: all .4s;
+    margin-left:890px;
+}
+.card8 img 
+{
+    width: 150px;
+    height: 150px;
+    top:30;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212); 
+    transition: all .4s;
+    z-index: 100;
+}
+.card8:hover img 
+{ 
+    margin-top: -30px;
+}
+.card8:hover 
+{
+    width: 160px;
+}
+.card8::before
+{
+    content:'Egg Curry';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 45px;
+    color:#053B50;
+    font-size: 0.8em;
+    font-family: 'san serif';
+    font-weight: 700;
+}
+.card9
+{
+    width: 150px;
+    height: 150px;
+    top:-1120px;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #053B50; 
+    display: flex;
+    justify-content:center;
+    position: relative; 
+    transition: all .4s;
+    margin-left:1150px;
+}
+.card9 img 
+{
+    width: 150px;
+    height: 150px;
+    top:30;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212); 
+    transition: all .4s;
+    z-index: 10;
+}
+.card9:hover img 
+{ 
+    margin-top: -30px;
+}
+.card9:hover 
+{
+    width: 160px;
+}
+.card9::before
+{
+    content:'Poori Massala ';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 25px;
+    color:#053B50;
+    font-size: 0.8em;
+    font-family: 'san serif';
+    font-weight: 700;
+}
+.card10
+{
+    width: 150px;
+    height: 150px;
+    top:-1040px;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #053B50; 
+    display: flex;
+    justify-content:center;
+    position: relative; 
+    transition: all .4s;
+    margin-left:1150px;
+}
+.card10 img 
+{
+    width: 150px;
+    height: 150px;
+    top:30;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212); 
+    transition: all .4s;
+    z-index: 10;
+}
+.card10:hover img 
+{ 
+    margin-top: -30px;
+}
+.card10:hover 
+{
+    width: 160px;
+}
+.card10::before
+{
+    content:' Sambar Vaadi ';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 25px;
+    color:#053B50;
+    font-size: 0.8em;
+    font-family: 'san serif';
+    font-weight: 700;
+}
+.breaks
+{
+  width: 100%;
+  padding-top: 60px;
+  background-color: white;
+  margin-top:-1100px;
+  padding-bottom: 80px;
+  height: auto;
+}
+.hi1
+{
+ text-align: center;
+ color: #C2B9B0;
+ text-shadow: 2px 2px 5px gray;
+ font-size: 40px;
+}
+.home
+{
+  padding: 140px 0px;
+  margin-top: -160px;
+}
+.lunch
+{
+  margin-top:-350px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  height: auto;
+}
+.sweet
+{
+  margin-top: -350px;
+  padding-bottom: 80px;
+  padding-top: 55px;
+  height:1250px;
+}
+.iii
+{
+    height:150px;
+    bottom:0px;
+    left:0px;
+    border-radius:0;
+    width:100%;
+    background-image:linear-gradient(90deg,#053B50,#176B87,#64CCC5);
+    text-align: center;
+}
+.social-media a
+{   
+    display:inline-flex;
+    justify-content:center;
+    align-items: center;
+    width:30px;
+    height:30px;       
+    background:transparent;
+    border:2px solid rgb(243, 236, 236);
+    border-radius:50%;        
+    font-size:20px;
+    color:rgb(243, 236, 236);        
+    text-decoration:none;
+    margin:3px 3px 3px 0;
+    box-shadow:1px 1px 14px whitesmoke;
+    transform:translateY(-3px);
+    margin-top: 30px;
+}
+.con
+{
+  margin-left:250px;
+  font-size: 35px;
+  margin-top: -260px;
+  color:#C2B9B0;
+}
+.contact
+{
+  margin-top: 10px;
+  color: white;
+}
+.fooditems
+{
+    margin-top: 200px;
+    margin-left: 150px;
+    text-shadow: 2px 2px 5px #053B50;
+}
+.chicken
+{
+    font-size: 30px;
+    color: #053B50;
+    margin-top: -570px;
+    margin-left: 150px;
+    text-shadow: 2px 2px 5px #64CCC5;
+    margin-bottom: 18px;
+}
+.curry
+{
+    font-size:30px ;
+    margin-left: 1000px;
+    margin-top: -50px;
+    color:#053B50 ;
+    text-shadow: 2px 2px 5px #64CCC5;
+}
+.curry1
+{
+    font-family: Calibri;
+    margin-right: 140px;
+    text-align: justify;
+    margin-left: 1000px;
+    font-size: 17px;
+    margin-top: 20px;
+}
+.ingre
+{
+    font-size:30px ;
+    margin-top: 20px;
+    margin-left: 1000px;
+    color: #053B50;
+    text-shadow: 2px 2px 5px #64CCC5;
+    
+}
+.ingre1
+{
+    margin-top:20px ;
+    margin-left: 1015px;
+    font-family: Calibri;
+    font-size: 20px;
+}
+.ingre2
+{
+    margin-top:-140px ;
+    margin-left: 1240px;
+    font-family: Calibri;
+    font-size: 20px;
+}
+.feeds 
+{
+    font-size:30px ;
+    margin-top:20px;
+    margin-left: 1000px;
+    color: #053B50;
+    text-shadow: 2px 2px 5px #64CCC5;
+}
+#field3 
+{
+    background-image:linear-gradient(90deg,#053B50,#176B87,#64CCC5);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 1000px;
+    border-radius: 80px;
+    margin-top: 20px;
+}
+#text
+{
+    border-radius:px;
+    height: 100px;
+    width: 400px;
+    margin-left: 1000px;
+    margin-top: 20px;
+    background-color: #e5f3f8;
+    box-shadow: 2px 2px 5px #176B87;
+    border: none;
+}
+.arrow img
+{
+    height:30px;
+    margin-left:870px;
+    margin-top: -340px;
+    margin-bottom: 22px;
+}
+.new1
+{
+    margin-left: 35px;
+}
+.arrow1 img
+{
+    height:30px;
+    margin-left:1050px;
+    margin-top: -210px;
+    margin-bottom: 23px;
+}
+.arrow2 img
+{
+    height:30px;
+    margin-left:1000px;
+    margin-top: -210px;
+    margin-bottom: 23px;
+}
+.arrow3 img
+{
+    height:30px;
+    margin-left:1030px;
+    margin-top: -210px;
+    margin-bottom: 23px;
+}
+.hh h3
+{
+    font-size: 10px;
+}
+.mm
+{
+    margin-top: -40px;
+}
+.hi
+{
+    margin-top: 40px;
+}
+.page2
+{
+    margin-left: 25px;
+}
+.page3
+{
+    margin-top: -1030px;
+    margin-left: 25px;
+}
+.field5
+{
+    border-radius: 40px;
+    width: 80px;
+    background-image:linear-gradient(90deg,#053B50,#176B87,#64CCC5);
+    height:30px;
+    margin-left: 25px;
+    margin-top: 10px;
+    color: white;
+    border: none;
+}
+.hi2
+{
+    margin-top: 140px;
+    text-align: center;
+    color:#053B50;
+    text-shadow: 2px 2px 5px #176B87;
+    font-size: 40px;
+}
+.container1
+{
+   margin-top: -250px;
+}
+.card51
+{
+    width: 150px;
+    height: 150px;
+    top:-220px;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #053B50; 
+    display: flex;
+    justify-content:center;
+    position: relative; 
+    transition: all .4s;
+    margin-left:650px;
+}
+.card51 img 
+{
+    width: 150px;
+    height: 150px;
+    top:30;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212); 
+    transition: all .4s;
+    z-index: 10;
+}
+.card51:hover img 
+{ 
+    margin-top: -30px;
+}
+.card51:hover 
+{
+    width: 160px;
+}
+.card51::before
+{
+    content:' Tomato Chutney ';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+    color:#053B50;
+    font-size: 0.8em;
+    font-family: 'sanserif';
+    font-weight: 700;
+}
+.card71
+{
+    width: 150px;
+    height: 150px;
+    top:-370px;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #053B50; 
+    display: flex;
+    justify-content:center;
+    position: relative; 
+    transition: all .4s;
+    margin-left:890px;
+}
+.card71 img 
+{
+    width: 150px;
+    height: 150px;
+    top:30;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212); 
+    transition: all .4s;
+    z-index: 10;
+}
+.card71:hover img 
+{ 
+    margin-top: -30px;
+}
+.card71:hover 
+{
+    width: 160px;
+}
+.card71::before
+{
+    content:' Chicken Biryani ';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 15px;
+    color:#053B50;
+    font-size: 0.8em;
+    font-family: 'san serif';
+    font-weight: 700;
+}
+.card91
+{
+    width: 150px;
+    height: 150px;
+    top:-520px;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #053B50; 
+    display: flex;
+    justify-content:center;
+    position: relative; 
+    transition: all .4s;
+    margin-left:1150px;
+}
+.card91 img 
+{
+    width: 150px;
+    height: 150px;
+    top:30;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212); 
+    transition: all .4s;
+    z-index: 10;
+}
+.card91:hover img 
+{ 
+    margin-top: -30px;
+}
+.card91:hover 
+{
+    width: 160px;
+}
+.card91::before
+{
+    content:'Poori Massala ';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 25px;
+    color:#053B50;
+    font-size: 0.8em;
+    font-family: 'san serif';
+    font-weight: 700;
+}
